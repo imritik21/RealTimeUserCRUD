@@ -1,0 +1,15 @@
+CREATE TABLE users(
+    id VARCHAR(50) PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+SHOW TABLES;
+SELECT * from users;
+SELECT COUNT(*) FROM users;
+
+INSERT INTO users (id,username,email,password)
+ VALUES ("11x","Ritikwa","imritik@gmail.com","1431512");
+UPDATE users SET username="Ritik" WHERE id="11x";
+INSERT INTO users (id,username,email,password)
+ VALUES ("1xx","sujju","sujju@gmail.com","1431512");
